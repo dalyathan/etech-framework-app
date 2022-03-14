@@ -1,0 +1,12 @@
+mat-toolbar {
+    width: calc(100vw - var(--drawerwidth));
+    height: var(--navbarheight);
+    position: absolute;
+    top: 0;
+    left: var(--drawerwidth);
+    background-color: var(--themecolor);
+}
+
+mat-toolbar span,mat-toolbar mat-icon{
+    font-size: 1.5vw;
+}

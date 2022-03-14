@@ -1,0 +1,27 @@
+div{
+    --height: 15vh;
+    position: absolute;
+    background-image: linear-gradient(to right,white, var(--themecolor));
+    width: calc(100vw - var(--drawerwidth));
+    height: var(--height);
+    left: var(--drawerwidth);
+    top: var(--navbarheight);
+}
+
+ul{
+    list-style-type: none;
+    position: relative;
+    top: calc(0.6 * var(--height));
+    color: blue;
+}
+
+li{
+    --font-size: 1.5vw;
+    font-size: var(--font-size);
+    display: inline;
+}
+
+mat-icon{
+    font-size: var(--font-size);
+    margin-left: 2.5vw;
+}
