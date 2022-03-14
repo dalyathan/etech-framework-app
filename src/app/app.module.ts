@@ -11,6 +11,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import { DrawerComponent } from './component/drawer/drawer.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { MatIconModule } from '@angular/material/icon';
+import {MatExpansionModule} from '@angular/material/expansion'; 
 import { ContactHeaderComponent } from './component/contact-header/contact-header.component';
 
 
@@ -29,7 +30,8 @@ import { ContactHeaderComponent } from './component/contact-header/contact-heade
     MatSidenavModule,
     MatToolbarModule,
     MatGridListModule,
-    MatIconModule
+    MatIconModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

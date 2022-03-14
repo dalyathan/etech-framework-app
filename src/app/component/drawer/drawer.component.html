@@ -1,31 +1,49 @@
 <mat-sidenav-container>
-    <!-- <mat-sidenav opened> -->
         <img src={{logoPath}} />
         <div class="dashboard">
             <mat-icon>home</mat-icon>
             <span>Dashboard</span>
         </div>
-        <ul>
+        <ul class="menu-bar">
             <li>
-                <div class="row">
-                    <mat-icon >call</mat-icon>
-                    <span>Contacts</span>
-                    <mat-icon class="dropdown-icon">keyboard_arrow_down</mat-icon>
-                </div>
+                <mat-expansion-panel class="row">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        <mat-icon >call</mat-icon>
+                        Contacts
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <ul class="menu-detail">
+                        <li>
+                            <mat-icon>add</mat-icon>
+                            Add
+                        </li>
+                        <li>
+                          <mat-icon>search</mat-icon>
+                          Search
+                      </li>
+                    </ul>
+                </mat-expansion-panel>
             </li>
             <li>
-                <div>
-                    <mat-icon >history</mat-icon>
-                    <span>Contact History</span>
-                    <mat-icon class="dropdown-icon">keyboard_arrow_down</mat-icon>
-                </div>
+                <mat-expansion-panel class="row">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        <mat-icon >history</mat-icon>
+                        Contact History
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
             </li>
             <li>
-                <div>
-                    <mat-icon >groups</mat-icon>
-                    <span>Members</span>
-                    <mat-icon class="dropdown-icon" >keyboard_arrow_down</mat-icon>
-                </div>
+                <mat-expansion-panel class="row">
+                    <mat-expansion-panel-header>
+                      <mat-panel-title>
+                        <mat-icon >groups</mat-icon>
+                        Members
+                      </mat-panel-title>
+                    </mat-expansion-panel-header>
+                </mat-expansion-panel>
             </li>
         </ul>
         <hr/>
@@ -34,9 +52,4 @@
             <span>English</span>
             <mat-icon >keyboard_arrow_down</mat-icon>
         </div>
-    <!-- </mat-sidenav> -->
-    <!-- <mat-sidenav-content>
-        <app-navbar></app-navbar>
-        <app-contact-header></app-contact-header>
-    </mat-sidenav-content> -->
 </mat-sidenav-container>
