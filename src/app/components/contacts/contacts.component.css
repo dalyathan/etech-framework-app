@@ -2,11 +2,13 @@
     position: absolute;
     top: calc(var(--contact-header-height) + var(--navbarheight));
     left: var(--drawerwidth);
-    padding: 2vh;
+    padding-left: 2%;
+    padding-right: 2%;
     width: 80%;
 }
 
 table{
-    width: 60%;
-    padding-left: 5%;
+    width: 98%;
+    padding: 2% 5%;
+
 }

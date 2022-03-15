@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactsService } from '../drawer/drawer.component';
+import { ContactsService } from 'src/app/services/contacts_service';
 
 @Component({
   selector: 'app-contacts',
@@ -9,9 +9,8 @@ import { ContactsService } from '../drawer/drawer.component';
 export class ContactsComponent implements OnInit {
 
   contacts: any[];
-  displayedColumns: string[] = ['position','name', 'number', 'address'];
+  displayedColumns = ['position','name', 'number', 'address'];
   searchString='';
-  // filteredContacts=this.searchString!=''?contacts.map;
 
   constructor(private service: ContactsService) { 
     this.contacts=[];
@@ -20,8 +19,8 @@ export class ContactsComponent implements OnInit {
   ngOnInit() {
     this.service.currentMessage.subscribe(
       message =>{
-        this.contacts= [];
-        this.contacts=[...message];
+        var newArray=[...this.contacts,message];
+        this.contacts=newArray;
       }
       );
    }

@@ -9,4 +9,6 @@ mat-toolbar {
 
 mat-toolbar span,mat-toolbar mat-icon{
     font-size: 1.5vw;
+    color: white;
+
 }

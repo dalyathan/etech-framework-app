@@ -1,12 +1,19 @@
 import { Component, Injectable,OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { BehaviorSubject, Subject } from 'rxjs';
-import { DialogComponent, Contact } from '../dialog/dialog.component';
+import { Contact } from 'src/app/models/contacts';
+import { ContactsService } from 'src/app/services/contacts_service';
+import { DialogComponent } from '../dialog/dialog.component';
 
 @Component({
   selector: 'app-drawer',
   templateUrl: './drawer.component.html',
-  styleUrls: ['./drawer.component.css']
+  styleUrls: ['./drawer.component.css'],
+  styles: [`
+    ::ng-deep .specific-class > .mat-expansion-indicator:after {
+      border-color: white;
+    }
+  `],
 })
 export class DrawerComponent implements OnInit {
   logoPath='assets/images/logo.png'
@@ -34,16 +41,3 @@ export class DrawerComponent implements OnInit {
   }
 
 }
-export class ContactsService {
-  constructor(){}
-  //Using any
-  public contactList: any = [];
-  public subject = new Subject<any>();
-  private messageSource = new  BehaviorSubject(this.contactList);
-  currentMessage = this.messageSource.asObservable();
-  update(newContact: Contact){
-    this.contactList.push({position: this.contactList.length+1, name: newContact.name, number: newContact.number,address: newContact.address});
-    console.log('updated');
-    this.messageSource.next(this.contactList);
-  }
-  }

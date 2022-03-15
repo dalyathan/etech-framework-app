@@ -8,19 +8,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { DrawerComponent, ContactsService } from './component/drawer/drawer.component';
-import { NavbarComponent } from './component/navbar/navbar.component';
+import { DrawerComponent } from './components/drawer/drawer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion'; 
-import { ContactHeaderComponent } from './component/contact-header/contact-header.component';
-import { DialogComponent } from './component/dialog/dialog.component';
+import { ContactHeaderComponent } from './components/contact-header/contact-header.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 import { MatDialogModule} from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
-import { ContactsComponent } from './component/contacts/contacts.component';
+import { ContactsComponent } from './components/contacts/contacts.component';
 import { MatTableModule } from '@angular/material/table';
+import { ContactsService } from './services/contacts_service';
 
 
 

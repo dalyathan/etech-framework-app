@@ -1,11 +1,8 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Contact } from 'src/app/models/contacts';
 
-export interface Contact {
-  name: string;
-  number: string;
-  address:string;
-}
+
 
 @Component({
   selector: 'app-dialog',

@@ -10,7 +10,8 @@ div{
 ul{
     list-style-type: none;
     position: relative;
-    top: calc(0.6 * var(--contact-header-height));
+    top: calc(0.4 * var(--contact-header-height));
+    left: -2vw;
     color: blue;
 }
 

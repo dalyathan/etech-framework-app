@@ -5,6 +5,7 @@ mat-sidenav-container {
     left: 0;
     top: 0;
     background-color: var(--themecolor);
+    color: white;
 }
 
 img{
@@ -21,14 +22,15 @@ img{
 .dashboard{
     --height: 6vh;
     --font-size: 3vh;
+    --padding: 2vw;
     position: relative;
     top: calc(var(--navbarheight)*0.7);
-    width: var(--drawerwidth);
+    width: calc(var(--drawerwidth)-var(--padding));
     font-size: var(--font-size);
     height: var(--height);
     background-color: orange;
     display: flex;
-    justify-content: center;
+    padding-left: var(--padding);
     align-items: center;
 }
 
@@ -40,6 +42,8 @@ img{
     height: calc(var(--height)*3);
     /* width: var(--drawerwidth); */
     padding-left: 0px;
+    color: white;
+
 }
 
 .menu-detail{
@@ -51,9 +55,10 @@ li mat-expansion-panel{
     background-color: var(--themecolor);
     width: var(--drawerwidth);
     margin-bottom: 0;
+    color: white;
 }
 
-mat-panel-title mat-icon{
+mat-panel-title mat-icon,.dashboard mat-icon{
     margin-right: 1vw;
 }
 
@@ -65,6 +70,7 @@ mat-panel-title mat-icon{
 
 .menu-detail mat-icon{
     font-size: calc(0.8*var(--detail-font-size));
+    color: white;
 }
 
 hr{
@@ -79,4 +85,8 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+mat-panel-title,mat-expansion-panel-header{
+    color: white;
 }
