@@ -15,6 +15,7 @@ img{
     position: relative;
     left: var(--padding);
     top: calc(var(--navbarheight)*0.7);
+    margin-bottom: 10%;
 }
 
 .dashboard{
@@ -67,7 +68,7 @@ mat-panel-title mat-icon{
 }
 
 hr{
-    margin-top: 25vh;
+    margin-top: 15vh;
 }
 
 .dropdown-icon{

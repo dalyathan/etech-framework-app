@@ -2,12 +2,14 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 :root{
     --drawerwidth: 20vw;
     --navbarheight: 10vh;
     --themecolor: blue;
+    --contact-header-height: 15vh;
 }
+
 .example-spacer {
     flex: 1 1 auto;
-  }
-  
+}

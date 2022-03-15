@@ -1,9 +1,8 @@
 div{
-    --height: 15vh;
     position: absolute;
     background-image: linear-gradient(to right,white, var(--themecolor));
     width: calc(100vw - var(--drawerwidth));
-    height: var(--height);
+    height: var(--contact-header-height);
     left: var(--drawerwidth);
     top: var(--navbarheight);
 }
@@ -11,7 +10,7 @@ div{
 ul{
     list-style-type: none;
     position: relative;
-    top: calc(0.6 * var(--height));
+    top: calc(0.6 * var(--contact-header-height));
     color: blue;
 }
 

@@ -1,0 +1,12 @@
+#body{
+    position: absolute;
+    top: calc(var(--contact-header-height) + var(--navbarheight));
+    left: var(--drawerwidth);
+    padding: 2vh;
+    width: 80%;
+}
+
+table{
+    width: 60%;
+    padding-left: 5%;
+}
